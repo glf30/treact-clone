@@ -49,6 +49,10 @@ img {
     color: #6415FF;
 }
 
+.left {
+    margin-left: 32px;
+}
+
 .btn {
     font-size: 16px;
     font-weight: bold;
@@ -246,9 +250,8 @@ didn't work
 }
 
 .service {
-    padding: 32px 16px;
-    margin: 0 16px;
-    width: calc(100/3);
+    padding: 24px 0;
+    width: calc(100%/3);
     display: flex;
     
 }
@@ -309,4 +312,58 @@ didn't work
     font-size: 16px;
     line-height: 1.7;
     max-width: 300px;
+}
+
+/* VALUES */
+
+.values__wrapper {
+    padding: 8px;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.value {
+    display: flex;
+    flex-direction: column;
+}
+
+.value__header {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.value__header--title {
+    font-size: 22px;
+    color: #243E63;
+    margin-left: 12px;
+}
+
+.value__img {
+    width: 20px;
+    height: 20px;
+}
+
+.value__img--wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.affordable {
+    background-color: #9AE6B4;
+}
+
+.professionalism {
+    background-color: #FEB2B2;
+}
+
+.value__para {
+    font-size: 16px;
+    color: #718096;
+    line-height: 1.7;
+    max-width: 240px;
 }
