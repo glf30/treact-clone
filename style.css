@@ -22,6 +22,10 @@ a {
     text-decoration-color: transparent;
 }
 
+img {
+    width: 100%;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -30,6 +34,10 @@ a {
 
 .logo {
     width: 40px;
+}
+
+.purple {
+    color: #6415FF;
 }
 
 .btn {
@@ -49,6 +57,11 @@ a {
 }
 
 /* NAV */
+
+nav {
+    height: 44px;
+    margin-bottom: 32px;
+}
 
 .nav__container {
     padding: 32px;
@@ -95,4 +108,85 @@ a {
     text-underline-offset: 6px;
 }
 
-/* LANDING */
+/* HEADER */
+
+header {
+    min-height: calc(100vh - 76px); /*height of page factoring in nav height/padding */
+}
+
+.header__container {
+    padding: 84px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__signup {
+    width: 40%;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.header__img--wrapper {
+    width: 60%;
+}
+
+.header__signup--title {
+    font-size: 48px;
+    color: #1A202C;
+    margin: 20px 0;
+}
+
+.header__signup--para {
+    color: #243E63;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 28px 0;
+}
+
+.header__email {
+    margin-bottom: 64px;
+    display: flex;
+    border: 2px solid rgb(124, 139, 161, 0.2);
+    border-radius: 24px;
+    padding: 6px;
+    transition: all 200ms ease;
+}
+
+.header__email:hover  {
+    border: 2px solid rgb(124, 139, 161, 1);
+}
+
+.header__email--input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 32px;
+    flex-grow: 2;
+    border:none;
+}
+
+.header__email--input:focus {
+    outline: none;
+}
+
+/* 
+attempted to make border highlight purple when selecting (focusing) on input field while typing
+didn't work
+.header__email--input:focus .header__email {
+    border: 2px solid #6415FF;
+} */
+  
+.header__email--input::placeholder { 
+    color: #7C8BA1;
+    opacity: 0.5; 
+}
+
+.header__signup--subtitle {
+    color: #A0AEC0;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 12px;
+}
