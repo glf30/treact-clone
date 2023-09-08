@@ -14,13 +14,12 @@
   gray: #7C8BA1
 */
 
-
 li {
     list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+    text-decoration-color: transparent;
 }
 
 .row {
@@ -42,6 +41,11 @@ a {
     border: none;
     border-radius: 24px;
     cursor: pointer;
+    transition: all 450ms ease;
+}
+
+.btn:hover {
+    background-color: #3E119A;
 }
 
 /* NAV */
@@ -63,6 +67,11 @@ a {
     font-size: 24px;
     color: #243E63;
     margin-left: 12px;
+    transition: all 450ms ease;
+}
+
+.nav__logo--text:hover {
+    color: #6415FF;
 }
 
 .nav__links {
@@ -76,6 +85,14 @@ a {
     color: #243E63;
     padding: 4px;
     margin: 0 24px;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    color: #6415FF;
+    text-decoration-color: #6415FF;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
 }
 
 /* LANDING */
