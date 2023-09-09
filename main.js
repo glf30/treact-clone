@@ -23,6 +23,23 @@ let para = document.querySelector('.test__para');
 let testName = document.querySelector(".test__name");
 let position = document.querySelector(".test__position");
 
+/* ACCORDIAN */
+const accordianArray = document.querySelectorAll(".accordians .accordian");
+
+accordianArray.forEach((e) => {
+    e.addEventListener("click", () => {
+        let faqDisplay = e.querySelector('.faq__para');
+        let faqArrowDisplay = e.querySelector('img');
+
+        if(faqDisplay.style.display === "block"){
+            faqDisplay.style.display = "none";
+            faqArrowDisplay.src = "./assets/faq-arrow.svg"
+        } else {
+            faqDisplay.style.display = "block";
+            faqArrowDisplay.src = "./assets/faq-arrow-open.svg"
+        }
+    })
+})
 
 let changeImage = () => {
     if (value+1 === testimonialsArray.length){
