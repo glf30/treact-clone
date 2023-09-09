@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /*
@@ -501,8 +501,88 @@ didn't work
     color: #E2E8F0;
 }
 
-/*
-2nd linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
-3rd
-background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
-*/
+/* TESTIMONIALS */
+
+.test__ratings {
+    margin-bottom: 8px;
+    color: #fabf2a;
+}
+
+.test__header--title {
+    margin: 12px 0;
+    font-size: 20px;
+    color: #243E63;
+}
+
+.test__para {
+    color: #4A5568;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.test__reviewer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.test__reviewer--profile {
+    display: flex;
+    align-items: center;
+}
+
+.test__img--wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.test__reviewer--title {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.test__name {
+    color: #243E63;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.test__position {
+    color: #7C8BA1;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.test__arrows {
+    display: flex;
+    align-items: center;
+}
+
+.divider {
+    margin: 0 12px 0 8px;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-right: 1px solid #EDF2F7;
+}
+
+.test__arrow {
+    width: 48px;
+    height: 48px;
+    background-color: #EDF2F7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 450ms ease;
+}
+.test__arrow--img {
+    width: 30px;
+    height: 30px;
+}
+
+.test__arrow:hover {
+    background-color: #E2E8F0;
+}
