@@ -789,3 +789,80 @@ footer {
 .footer__img--wrapper:hover {
     background-color: #CBD5E0;
 }
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1020px) {
+
+    /* body {
+        background-color: red;
+    } */
+    
+    .header__signup { 
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__signup--title {
+        font-size: 30px;
+    }
+  
+    .header__signup--para {
+        font-size: 16px;
+    }
+
+    .service {
+        width: calc(100%/2);
+        justify-content: center;
+    }
+
+    #quality .section__heading--subtitle, 
+    #steps .section__heading--subtitle,
+    #values .section__heading--subtitle {
+        max-width: 350px;
+        font-size: 36px;
+    }
+
+    #quality .section__heading--para
+    #values .section__heading--para {
+        max-width: 370px;
+        font-size: 16px;
+    }
+
+    .step__content--title {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .step__content--para {
+        font-size: 14px;
+    }
+
+    .values__wrapper {
+        max-width: 1800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        margin-bottom: 24px;
+    }
+
+    .value__para {
+        max-width: 325px;
+    }
+
+    .left {
+        margin: 0;
+    }
+}
