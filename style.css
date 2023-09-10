@@ -828,13 +828,15 @@ footer {
 
     #quality .section__heading--subtitle, 
     #steps .section__heading--subtitle,
-    #values .section__heading--subtitle {
+    #values .section__heading--subtitle,
+    #testimonials .section__heading--subtitle {
         max-width: 350px;
         font-size: 36px;
     }
 
-    #quality .section__heading--para
-    #values .section__heading--para {
+    #quality .section__heading--para,
+    #values .section__heading--para,
+    #testimonials .section__heading--para {
         max-width: 370px;
         font-size: 16px;
     }
@@ -864,5 +866,49 @@ footer {
 
     .left {
         margin: 0;
+    }
+
+    .plan {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .plans {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .test__para {
+        max-width: 400px;
+    }
+
+    .test__reviewer {
+        max-width: 450px;
+    }
+
+    #faqs {
+        margin: 0 24px;
+    }
+
+    .contact__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__title {
+        margin-bottom: 20px;
+    }
+
+
+    .horizontal__divider {
+        width: 95%;
+        margin: 24px auto;
+    }
+
+    .footer__menu {
+        margin: 0 24px;
     }
 }
