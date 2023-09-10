@@ -794,10 +794,11 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 1020px) {
 
-    /* body {
-        background-color: red;
-    } */
-    
+    .nav__links {
+        display: none;
+    }
+
+
     .header__signup { 
         margin-bottom: 32px;
         display: flex;
@@ -805,7 +806,7 @@ footer {
         align-items: center;
         justify-content: center;
         text-align: center;
-        
+       
     }
 
     .header__container {
@@ -871,7 +872,7 @@ footer {
     .plan {
         max-width: 400px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 36px;
     }
 
     .plans {
@@ -911,4 +912,230 @@ footer {
     .footer__menu {
         margin: 0 24px;
     }
+
+    #contact .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__wrapper {
+        width: 90%;
+    }
 }
+
+@media (max-width: 760px) {
+
+    .header__signup {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .header__email {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .header__email:hover {
+        border: none;
+    }
+
+    .header__email--input {
+        padding: 16px;
+        margin-bottom: 24px;
+        border: 2px solid rgb(124, 139, 161, 0.2);
+        border-radius: 24px;
+        transition: all 200ms ease;
+    }
+
+    .header__email--input:hover {
+        border: 2px solid rgb(124, 139, 161, 1);
+    }
+
+    .header__email--btn {
+        padding: 16px;
+    }
+
+    .header__signup--companies {
+        width: 80%;
+    }
+
+    .section__heading--subtitle {
+        max-width: 350px;
+        font-size: 36px;
+    }
+
+    .section__heading--para {
+        margin: 0 4px;
+        max-width: 450px;
+        font-size: 14px;
+    }
+
+    #quality .section__heading--para,
+    #values .section__heading--para,
+    #testimonials .section__heading--para {
+        margin: 0 8px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service__content--title {
+        margin: 16px 0;
+        font-size: 24px;
+    }
+
+    .service__content--para {
+        max-width: 350px;
+        font-size: 16px;
+    }
+
+    .section__wrapper {
+        text-align: center;
+        align-items: center; 
+        justify-content: center;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .half {
+        width: 100%;
+    }
+
+    .section__heading {
+        align-items: center;
+    }
+
+    .section__heading--para {
+        margin-bottom: 16px;
+    }
+
+    .section__img {
+        max-width: 70%; 
+        margin: 16px;
+    }
+
+    .border__img {
+        border: 1px solid #E2E8F0;
+        border-radius: .25rem;
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step__number {
+       margin-left: 20px;
+    }
+
+    .value__header {
+        justify-content: center;
+    }
+
+    #values .row {
+        flex-direction: column-reverse;
+    }
+
+    #pricing .section__heading--subtitle,
+    #faqs .section__heading--subtitle {
+        max-width: 650px;
+        font-size: 48px;
+    }
+
+    .test__header--title {
+        max-width: 450px;
+    }
+
+    .test__para {
+        max-width: 450px;
+        margin-bottom: 32px;
+    }
+
+    .faq__title {
+        font-size: 18px;
+    }
+
+
+    .contact__title {
+        max-width: 500px;
+        font-size: 24px;
+    }
+
+    .contact__btn1 {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    .contact__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer__link--menu {
+        width: calc(100%/4);
+        margin-bottom: 48px;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__logo,
+    .footer__copyright,
+    .footer__socials {
+        margin-bottom: 32px;
+    }
+}
+
+/* FOOTER LINK MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    .footer__link--menu {
+        width: calc(100%/3);
+    }
+}
+
+@media (max-width: 370px) {
+    .footer__link--menu {
+        width: calc(100%/2);
+    }
+}
+
+@media (max-width: 275px) {
+    .footer__link--menu {
+        width: 100%;
+    }
+}
+
+/* attempted things that I could not figure out */
+/*
+-purple outline on the header email input
+-the rounded gradient border for the price cards
+-Centering the footer menus using flex wrap for small screens for the bottom row.
+
+*/

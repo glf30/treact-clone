@@ -10,7 +10,7 @@ const test1 = {
 const test2 = {
     img: "./assets/test-2.avif",
     title: "Love the Developer Experience and Design Principles !",
-    para: "Atque accusantium dolor sit amet consectetur adipisicing elit. Modi in sit dolores consequatur, voluptate ipsum officia magnam saepe ducimus temporibus corrupti esse repellat repellendus deserunt, culpa, molestias doloribus. Atque accusantium ad cum nobis debitis molestias nostrum dolores amet consectetur!",
+    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi in sit dolores consequatur, voluptate ipsum officia magnam saepe ducimus temporibus corrupti esse repellat repellendus deserunt, culpa, molestias doloribus. Atque accusantium ad cum nobis debitis molestias nostrum dolores ullam saepe maiores!",
     name: "Adam Cuppy",
     position: "Founder, EventsNYC"
 }
