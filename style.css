@@ -798,6 +798,32 @@ footer {
     display: none
 }
 
+#landing {
+    animation: 400ms ease-out 0s 1 slideInFromLeft forwards;
+}
+
+#features {
+    animation: 400ms ease-out 0s 1 slideInFromRight forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+  }
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1020px) {
@@ -1197,5 +1223,5 @@ footer {
 -purple outline on the header email input
 -the rounded gradient border for the price cards
 -Centering the footer menus using flex wrap for small screens for the bottom row.
-
+-couldn't figure out how to make element only translate in when it appears so I left it for only the top 2 section
 */
