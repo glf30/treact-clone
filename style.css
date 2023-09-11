@@ -135,7 +135,6 @@ header {
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 .header__img--wrapper {
@@ -179,13 +178,6 @@ header {
 .header__email--input:focus {
     outline: none;
 }
-
-/* 
-attempted to make border highlight purple when selecting (focusing) on input field while typing
-didn't work
-.header__email--input:focus .header__email {
-    border: 2px solid #6415FF;
-} */
   
 .header__email--input::placeholder { 
     color: #7C8BA1;
@@ -382,40 +374,16 @@ didn't work
 
 .second-plan {
     background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
-    /* border-radius: 0.5rem; */
 }
 
 .plan__top {
     padding: 32px;
-    
-    /* border-top: 8px solid green; */
-    /* border-top-width: 8px;
-    border-top-style: solid; */
-    /* border-top: 8px solid; */
-    /* border-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%) 1;
-    /*border-radius: 2.5% 2.5%;
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: rgb(124, 139, 161, 0.2); */
     border: 2px solid rgb(124, 139, 161, 0.2);
     border-top: 8px solid rgb(124, 139, 161, 0.2);
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
 }
 
-.plan__border--top {
-    /* border-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); */
-    
-    /* border-top: 8px solid;
-    border-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%) 1;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    height: 0.5rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem; */
-}
 
 .plan__top--second {
     border: none;
@@ -1221,7 +1189,30 @@ footer {
 /* attempted things that I could not figure out */
 /*
 -purple outline on the header email input
+
+attempted to make border highlight purple when selecting (focusing) on input field while typing
+didn't work
+.header__email--input:focus .header__email {
+    border: 2px solid #6415FF;
+} */
+
+/*
 -the rounded gradient border for the price cards
+.plan__border--top {
+    /* border-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%); */
+    
+    /* border-top: 8px solid;
+    border-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%) 1;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; 
+}*/
+
+/*
 -Centering the footer menus using flex wrap for small screens for the bottom row.
 -couldn't figure out how to make element only translate in when it appears so I left it for only the top 2 section
 */
