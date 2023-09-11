@@ -38,6 +38,10 @@ img {
     width: 40px;
 }
 
+.btn__menu {
+    display: none;
+}
+
 .purple {
     color: #6415FF;
 }
@@ -790,16 +794,77 @@ footer {
     background-color: #CBD5E0;
 }
 
+.menu__backdrop {
+    display: none
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1020px) {
+
+    .btn__menu {
+        font-size: 24px;
+        display: block;
+        border: none;
+        color: #4A5568;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    .btn__menu:hover {
+        color:#6415FF
+    }
 
     .nav__links {
         display: none;
     }
 
+    .menu__backdrop {
+        width: 100%;     
+        margin: 24px 0;
+        padding: 32px;
+        position: fixed;
+        background-color: white;
+        border: 1px solid #CBD5E0;
+        border-radius: .5rem;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+        transition: all 300ms ease;
+        opacity: 0;
+        transform: translate(100%);
+    }
 
-    .header__signup { 
+    .nav__link {
+        font-size: 18px;
+    }
+
+    .menu__list {
+        text-align: center;
+        margin: 24px 0;
+    }
+    
+    .menu--open .menu__backdrop {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    .btn__menu--close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 24px;
+    }
+
+    .header__signup {  
+        width: 100%;
+        max-width: 600px;
         margin-bottom: 32px;
         display: flex;
         flex-direction: column;
@@ -925,11 +990,6 @@ footer {
 }
 
 @media (max-width: 760px) {
-
-    .header__signup {
-        width: 100%;
-        max-width: 600px;
-    }
 
     .header__email {
         width: 90%;

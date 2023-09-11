@@ -1,3 +1,5 @@
+/* TESTIMONIAL VARIABLES */
+
 const leftArrow = document.querySelector("#left-arrow");
 const rightArrow = document.querySelector("#right-arrow");
 const test1 = {
@@ -23,8 +25,15 @@ let para = document.querySelector('.test__para');
 let testName = document.querySelector(".test__name");
 let position = document.querySelector(".test__position");
 
-/* ACCORDIAN */
+/* ACCORDIAN VARIABLES */
 const accordianArray = document.querySelectorAll(".accordians .accordian");
+
+/* NAV OPEN/CLOSE VARIABLES */
+const body = document.querySelector('body');
+const menuButton = document.querySelector('.btn__menu');
+const closeButton = document.querySelector('.btn__menu--close');
+
+/* FUNCTIONS/EVENT LISTENERS */
 
 accordianArray.forEach((e) => {
     e.addEventListener("click", () => {
@@ -56,3 +65,11 @@ let changeImage = () => {
 
 rightArrow.addEventListener("click", changeImage);
 leftArrow.addEventListener("click", changeImage);
+
+menuButton.addEventListener("click", () => {
+    body.classList.add("menu--open");
+})
+
+closeButton.addEventListener("click", () => {
+    body.classList.remove("menu--open");
+})
